@@ -27,7 +27,7 @@ const BlogPage = () => {
       <div className="cards-section">
         {allBlogs?.map(blog => (
            <div className="card" key={blog._id}>
-           <img src={blog.image} alt="blog image" />
+           <img src={blog.image} alt="blog img" />
            <div className="explanation">{blog.title}</div>
            <h4><Link to={`/blog/${blog._id}`}>Read More</Link></h4>
          </div>

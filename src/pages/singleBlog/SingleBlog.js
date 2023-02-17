@@ -31,6 +31,7 @@ const SingleBlog = () => {
     getSingleBlog();
     getAllBlogs();
   }, []);
+  console.log(singleBlog)
   return (
     <div className="container">
       <div className="blog">
@@ -72,6 +73,7 @@ const SingleBlog = () => {
         <div className="comments-title">Comments</div>
         <div className="users-comments">
           {singleBlog?.comments?.map(comment => (
+            
             <div className="all-comments" key={comment._id}>
             <div className="comment-header">
               <span>{comment.name}</span>
