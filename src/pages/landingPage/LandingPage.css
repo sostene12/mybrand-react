@@ -1,0 +1,186 @@
+.landingpage{
+    background-color: var(--gray);
+    height: 90vh;
+}
+
+.nav-container{
+    width: 100vw;
+}
+.scroll{
+    background-color: var(--white);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+    width: 90vw;
+    margin: 0px auto;
+    
+}
+
+
+
+.logo h2{
+    font-weight: 600;
+    font-size: 35px;
+}
+.logo h2 span:last-child{
+    color: var(--bule);
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+
+.nav-items ul{
+    display: flex;
+    align-items: center;
+}
+
+.nav-items ul li{
+    justify-content: space-evenly;
+    list-style: none;
+    font-weight: 500;
+    padding: 0px 25px;
+    font-size: 17px;
+}
+
+
+.nav-contents{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--gray);
+    position: absolute;
+    right: -100%;
+    top: 0;
+    z-index: 0;
+    transition: all ease-in 0.3s;
+    display: none;
+}
+
+.nav-contents.open{
+    right: 0;
+}
+
+.nav-contents ul{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+.nav-contents ul li{
+    list-style: none;
+    padding: 5px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--bule);
+}
+
+.active{
+    color: var(--bule);
+}
+
+ .button{
+    padding: 6px 22px;
+    border: none;
+    background-color: var(--bule);
+    font-weight: bold;
+    border-radius: 5px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+li .button:hover{
+    color: white;
+}
+
+.button a{
+    color: var(--white);
+} 
+
+.burger{
+    display: relative;
+    cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 1;
+    display: none;
+}
+
+.burger span{
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: var(--bule);
+    margin-bottom: 6px;
+    transition: all ease-in 0.3s;
+}
+
+.burger.open span:nth-child(1){
+    transform: rotate(45deg) translateY(10px);
+}
+.burger.open span:nth-child(2){
+    opacity: 0;
+}
+
+.burger.open span:nth-child(3){
+    transform: rotate(-45deg) translateY(-10px);
+}
+
+main .intro-word{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 90vw;
+}
+
+.intro-word h1{
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+.intro-word h1 span:last-child{
+    color: var(--bule);
+}
+
+.intro-word .name{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.name{
+    letter-spacing: 1px;
+}
+.name span:last-child{
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+.s-name{
+    color: var(--bule);
+}
+
+.small{
+    width: 40%;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+.small span{
+    color: var(--bule);
+}

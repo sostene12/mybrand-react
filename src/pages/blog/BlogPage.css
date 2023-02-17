@@ -1,0 +1,53 @@
+.blog-section{
+    background-color: var(--gray);
+}
+
+.blog{
+    width: 90vw;
+    margin: 0px auto;
+    padding: 40px 0px;
+}
+
+.blog h2{
+    color: var(--bule);
+    padding: 25px 0px;
+}
+
+.cards-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.blog-section .card{
+    background-color: var(--white);
+    width: 330px;
+    height: 370px;
+    border-radius: 20px;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-section .card img{
+    width: 95%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.blog-section .explanation{
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.blog h4{
+   align-self: flex-start;
+   padding-left: 10px;
+   color: var(--bule);
+   text-decoration: underline;
+   cursor: pointer;
+}
