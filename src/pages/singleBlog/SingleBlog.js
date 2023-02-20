@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 import "./SingleBlog.css";
 
@@ -37,9 +38,9 @@ const SingleBlog = () => {
       <div className="blog">
         <div className="blog-header-content">
           <div className="back-button">
-            <a href="index.html">
+            <Link to="/">
               <i className="fa-solid fa-circle-arrow-left"></i>
-            </a>
+            </Link>
           </div>
           <div className="login-btn">
             <a href="accounts.html">Login</a>
@@ -55,7 +56,7 @@ const SingleBlog = () => {
               <div className="date">December 12 2022</div>
             </div>
             <h4>Introduction</h4>
-            <div className="description">{singleBlog?.description}</div>
+            <div className="description">{singleBlog?.description?.replaceAll(/(<([^>]+)>)/ig, '')}</div>
             <div className="icons">
               <span>{singleBlog?.likes}</span>
               <i className="fa-solid fa-thumbs-up"></i>
@@ -95,7 +96,7 @@ const SingleBlog = () => {
             <div className="small-intro">
               <div>{blog.title.slice(0,20)}</div>
               <div>
-                {blog.description.slice(0,30)}
+                {blog.description?.slice(0,30)}
               </div>
               <div>Read More</div>
             </div>
